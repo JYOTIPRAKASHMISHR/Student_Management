@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('login1.jpg');
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center;
+}
+
+.container {
+    width: 300px; /* Fixed width for the form */
+    margin: 100px auto; /* Center the form vertically and horizontally */
+    background-color: rgba(255, 255, 255, 0.8); /* Light background with some transparency */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2, h4 {
+    text-align: center; /* Center align headings */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Add space between form groups */
+}
+
+label {
+    display: block; /* Make labels block elements */
+    margin-bottom: 5px; /* Add space below labels */
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%; /* Full width for inputs */
+    padding: 8px; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 4px; /* Rounded corners for inputs */
+}
+
+input[type="submit"] {
+    width: 100%; /* Full width for submit button */
+    padding: 10px; /* Padding inside submit button */
+    background-color: #007bff; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}

@@ -1,0 +1,348 @@
+/* Reset margins, paddings, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: aqua;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+/* Logo styling */
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+}
+
+/* Navigation links styling */
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 0;
+}
+
+/* Link styling */
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* Hover effect for links */
+.nav-links li a:hover {
+    text-decoration: underline;
+    color: darkblue;
+}
+
+/* Custom styling for Login button */
+.nav-links .login-btn {
+    padding: 8px 16px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #28a745;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for Login button */
+.nav-links .login-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Section 1 styling */
+.section1 {
+    margin-top: 60px; /* Space for fixed nav */
+    height: calc(100vh - 60px); /* Full height minus nav */
+    background-image: url('download.jpg'); /* Specify the background image */
+    background-size: cover; /* Makes the image cover the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    display: flex; /* Use flexbox to center the text */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: relative; /* Required for absolute positioning of .imgtext */
+}
+
+/* Text overlay styling */
+.imgtext {
+    color: black; /* Text color */
+    background-color: rgba(23, 247, 75, 0.7); /* Semi-transparent background for better visibility */
+    padding: 10px 25px; /* Padding for spacing */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 44px; 
+    
+    z-index: 1; /* Make sure the text is above the image */
+    position: absolute; /* Position absolute for better control */
+}
+
+/* Container for additional content */
+.container {
+    padding: 20px; /* Padding around the container */
+}
+
+/* Row styling */
+.row {
+    display: flex; /* Use flexbox for the row */
+    align-items: center; /* Center items vertically */
+    margin-top: 20px; /* Space above the row */
+}
+
+/* Column styling */
+.col-md-4, .col-md-8 {
+    padding: 10px; /* Padding for columns */
+}
+
+/* Welcome image styling */
+.welcome {
+    width: 100%; /* Make the welcome image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+.welcome {
+    width: 400px; /* Make the image responsive */
+    height: 400px; /* Set a maximum height */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+.container {
+    margin-top: 20px; /* Add space above the container */
+    padding: 20px; /* Padding inside the container */
+}
+
+/* Responsive design adjustments if needed */
+@media (max-width: 768px) {
+    .welcome {
+        width: 100%; /* Ensures image takes full width on small screens */
+        max-height: 200px; /* Adjust max height for smaller screens if necessary */
+    }
+}
+/* Container to center content and provide padding */
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Row styling */
+.row {
+    display: flex;
+    gap: 20px; /* Space between cards */
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Column styling */
+.col-md-4 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Image styling */
+.teacher-img {
+    width: 100%;
+    max-width: 250px; /* Sets max width for images */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px; /* Space below image */
+}
+
+/* Description styling */
+.teacher-description {
+    font-size: 16px;
+    color: #333;
+    padding: 0 10px; /* Adds padding for text within cards */
+    max-width: 250px;
+    line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .col-md-4 {
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Centering the course title */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em; /* Increase font size for the title */
+    color: #333; /* Title color */
+}
+
+/* Container for courses */
+.container {
+    padding: 20px;
+}
+
+/* Row styling */
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between course items */
+}
+
+/* Column styling */
+.col-md-4 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Image styling */
+.course-img {
+    width: 100%;
+    max-width: 250px; /* Sets max width for images */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px; /* Space below image */
+}
+
+/* Course title styling */
+h2 {
+    font-size: 1.5em; /* Set size for course titles */
+    color: #007BFF; /* Blue color for the course title */
+    margin: 10px 0; /* Add margin for spacing */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .col-md-4 {
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+}
+/* General body styling */
+body {
+    font-family: Arial, sans-serif; /* Font for the entire page */
+    background-color: #f0f8ff; /* Light background color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Centering the admission form */
+.admission_form {
+    max-width: 500px; /* Max width for the form */
+    margin: 40px auto; /* Center the form with margin on top and bottom */
+    padding: 20px; /* Padding inside the form */
+    border: 1px solid #ccc; /* Light gray border around the form */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #ffffff; /* White background for the form */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Styling for each form group */
+.form-group {
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+/* Styling for labels */
+label {
+    display: block; /* Make labels block elements */
+    margin-bottom: 5px; /* Space below label */
+    font-weight: bold; /* Bold text for labels */
+    color: #333; /* Dark gray color for text */
+}
+
+/* Styling for input fields and textarea */
+input,
+textarea {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Padding inside input and textarea */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size for text */
+    transition: border-color 0.3s ease; /* Transition for border color */
+}
+
+/* Focus effect for input fields and textarea */
+input:focus,
+textarea:focus {
+    border-color: #28a745; /* Green border on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Specific styling for textarea */
+textarea {
+    height: 100px; /* Fixed height for textarea */
+    resize: none; /* Disable resizing */
+}
+
+/* Styling for the submit button */
+button {
+    width: 100%; /* Full width for the button */
+    padding: 10px; /* Padding inside the button */
+    background-color: #28a745; /* Green background color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners for button */
+    font-size: 16px; /* Font size for button text */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Transition for background color */
+}
+
+/* Hover effect for button */
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+.footer {
+    text-align: center;
+    background-color: black;
+    padding: 20px; /* Increased padding for better spacing */
+    border-top: 2px solid #181818; /* Top border for distinction */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    position: relative; /* Optional for positioning */
+    bottom: 0; /* Optional for alignment */
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+}
+
+.footer-title {
+    margin: 0;
+    font-size: 24px; /* Increased font size */
+    color: #e0e5eb; /* Darker color for better contrast */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.footer-title:hover {
+    color: #007bff; /* Change color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+

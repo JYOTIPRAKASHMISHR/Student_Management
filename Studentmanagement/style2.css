@@ -1,0 +1,105 @@
+/* Reset default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 24px;
+}
+
+.logout-button {
+    color: #fff;
+    text-decoration: none;
+    background-color: #ff6347;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+.logout-button:hover {
+    background-color: #ff4500;
+}
+
+.dashboard {
+    display: flex;
+    min-height: calc(100vh - 50px);
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #222;
+    padding-top: 20px;
+    color: #fff;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    padding: 15px 20px;
+}
+
+.sidebar ul li a {
+    color: #ddd;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background-color: #444;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.overview {
+    margin-bottom: 20px;
+}
+
+.stats {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.card p {
+    font-size: 24px;
+    color: #555;
+}
